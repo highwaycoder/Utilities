@@ -14,21 +14,21 @@ namespace util
     typedef unsigned int data_type;
     #define DT_IS_XOR_SAFE 1
 
-    typedef struct Node
-    {
-        Node* next;
-        Node* previous;
-        data_type data;
-    } Node;
-
     class LinkedList
     {
     private:
+        typedef struct Node
+        {
+            Node* next;
+            Node* previous;
+            data_type data;
+        } Node;
         Node* head;
         unsigned int size;
         Node* fetch_node(unsigned int index);
-        void quicksort(unsigned int left,unsigned int right);
-        unsigned int quicksort_helper(unsigned int left,unsigned int right,unsigned int pivot);
+        void quicksort(unsigned int left, unsigned int right);
+        unsigned int quicksort_helper(unsigned int left, unsigned int right,
+                unsigned int pivot);
     public:
         LinkedList();
         virtual ~LinkedList();
@@ -41,7 +41,7 @@ namespace util
         void print(unsigned int index);
         void printAll(void);
         void printAll(unsigned int start_index);
-        void printAll(unsigned int start_index,unsigned int end_index);
+        void printAll(unsigned int start_index, unsigned int end_index);
     };
 
 } /* namespace util */

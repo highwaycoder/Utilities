@@ -62,7 +62,7 @@ namespace util
         size++;
     }
 
-    Node* LinkedList::fetch_node(unsigned int index)
+    LinkedList::Node* LinkedList::fetch_node(unsigned int index)
     {
         Node* current_node = head;
         if (size <= 1)
