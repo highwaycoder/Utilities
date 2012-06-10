@@ -3,7 +3,7 @@
 
 int main(void)
 {
-    util::Stack<>* testStack = new util::Stack<>();
+    util::Stack* testStack = new util::Stack();
     testStack->push(42);
     testStack->push(50);
     testStack->push(99);

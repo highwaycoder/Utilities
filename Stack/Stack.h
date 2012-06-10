@@ -14,7 +14,7 @@ namespace util
     class Stack
     {
     private:
-        typedef data_type unsigned int;
+        typedef unsigned int data_type;
         typedef struct Node
         {
             Node* down;

@@ -4,7 +4,7 @@
  *  Created on: Jun 9, 2012
  *      Author: miranda
  */
-
+#include <cstdio>
 #include "Stack.h"
 
 namespace util
@@ -31,7 +31,7 @@ namespace util
         depth++;
     }
 
-    data_type Stack::pop(void)
+    Stack::data_type Stack::pop(void)
     {
         if(depth == 0) return 0;
         data_type data = top->data;
